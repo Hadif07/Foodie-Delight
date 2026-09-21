@@ -1,0 +1,211 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>Foodie Delight</title>
+
+            <!-- jQuery Mobile CSS CDN -->
+            <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+            <!-- jQuery Mobile JS CDN -->
+             <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+             <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+             <style>
+                /* Center main hero image */
+                .product-image {
+                    width: 50%;
+                    border-radius: 10px;
+                    display: block;
+                    margin: 10px auto;
+                }
+
+                /* 2-column card grid */
+                .card-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                    gap: 15px;
+                    margin-top: 15px;
+                }
+
+                /* Card styling */
+                .card {
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    padding: 10px;
+                    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+                    background-color: #fff;
+                    text-align: center;
+                }
+
+                .card img {
+                    width: 100%;
+                    border-radius: 10px;
+                    height: 160px;
+                    object-fit: cover;
+                }
+
+                .card h3 {
+                    margin-top: 10px;
+                    font-size: 16px;
+                    color: #b33;
+                }
+
+                .card p {
+                    font-size: 14px;
+                    color: #333;
+                }
+
+                .card:hover {
+                    transform: scale(1.03);
+                }
+                .footer-text {
+                    text-align: center;
+                    font-size: 14px;
+                    color: #fff;
+                }
+             </style>
+        </head>
+
+        <body>
+
+            <!-- ========================== HOME PAGE ================================== -->
+             <div data-role="page" id="home">
+
+                <div data-role="header" data-theme="b">
+                    <h1>Foodie Delight</h1>
+                </div>
+
+                <!-- Navigation Bar -->
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" class="ui-btn-active">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div data-role="content">
+                    <h2>Welcome to Foodie Delight!</h2>
+                    <p>We are a family-owned restaurant that has been serving the community for over 20 years. Our mission is to provide the highest quality food made with love and the finest ingredients.</p>
+                    <h3>Featured Items</h3>
+
+                <!-- Responsive Card Grid -->
+                <div class="card-grid">
+                    <div class="card">
+                        <img src="burger.jpg" alt="Burger">
+                        <h3>Burger</h3>
+                        <p>Delicious beef burger with fresh ingredients.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="cookies.jpg" alt="Cookies">
+                        <h3>Cookies</h3>
+                        <p>Delicious chocolate chip cookies that are crispy on the outside and chewy on the inside.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="pastry.jpg" alt="Pastry">
+                        <h3>Pastry</h3>
+                        <p>Delicious pastries made with the finest ingredients.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="meat.jpg" alt="Meat Pies">
+                        <h3>Meat Pies</h3>
+                        <p>Delicious meat pies filled with seasoned meat and served hot.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div data-role="footer" data-theme="b" data-position="fixed">
+            <h4 class="footer-text">© 2024 Foodie Delight. All rights reserved.</h4>
+            </div>
+        </div>
+
+        <!-- PRODUCTS PAGE -->
+<div data-role="page" id="products">
+    <div data-role="header" data-theme="b">
+        <a href="#home" data-icon="home" data-iconpos="notext"></a>
+        <h1>Our Products</h1>
+    </div>
+
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products" class="ui-btn-active">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div data-role="content" class="container">
+        <ul data-role="listview" data-inset="true">
+            <li>
+                <img src="burger.jpg" alt="Burger">
+                <h2>Burger</h2>
+                <p>Delicious beef burger with fresh ingredients.</p>
+            </li>
+            
+            <li>
+                <img src="cookies.jpg" alt="Cookies">
+                <h2>Cookies</h2>
+                <p>Delicious chocolate chip cookies that are crispy on the outside and chewy on the inside.</p>
+            </li>
+
+            <li>
+                <img src="pastry.jpg" alt="Pastry">
+                <h2>Pastry</h2>
+                <p>Delicious pastries made with the finest ingredients.</p>
+            </li>
+
+            <li>
+                <img src="meat.jpg" alt="Meat Pies">
+                <h2>Meat Pies</h2>
+                <p>Delicious meat pies filled with seasoned meat and served hot.</p>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4 class="footer-text">©️ 2026 Foodie Delight</h4>
+    </div>
+</div>
+
+<!-- CONTACT PAGE -->
+<div data-role="page" id="contact">
+    <div data-role="header" data-theme="b">
+        <a href="#home" data-icon="home" data-iconpos="notext"></a>
+        <h1>Contact Us</h1>
+    </div>
+
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact" class="ui-btn-active">Contact</a></li>
+        </ul>
+    </div>
+
+    <div data-role="content" class="container">
+        <div class="contact-container">
+            <div class="contact-item">
+                <strong>Email:</strong> info@foodiedelight.com
+            </div>
+            <div class="contact-item">
+                <strong>Phone:</strong> +60 132108227
+            </div>
+            <div class="contact-item">
+                <strong>Address:</strong> Kuching, Sarawak, Malaysia
+            </div>
+            <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b">Send Message</button>
+        </div>
+    </div>
+
+    <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4 class="footer-text">©️ 2026 Foodie Delight</h4>
+    </div>
+</div>
+
+</body>
+</html>
+        </body>
+    </html>
